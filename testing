@@ -1,0 +1,39 @@
+// function personName (name){
+//   return name
+// }
+
+// var personName = (name, lastName) => name + lastName
+
+// console.log(personName("Burns", " Vaughan"))
+
+var name = "Burns"
+var lastName = "Vaughan"
+
+console.log(`The users name is ${name} ${lastName}.`)
+
+const product = (name, description, price, stocksRemaining) => {
+  return `${name} is a ${description} that sells for ${price}, and there are ${stocksRemaining} available in stock`
+}
+
+console.log(product("Mackerel", "can of fish", "$3", "2"))
+console.log(product("Peanut Butter", "container of food", "$2", "5"))
+
+const dealerShip = (name, totalCars = 3000) => {
+  return `${name} has ${totalCars} cars available`
+}
+
+dealerShip("Empire", "5000")
+
+const userNames = function(...names) {
+
+  console.log(names)
+}
+
+userNames("John", "Bob", "Stephanie", "Matt", "Michael", "Phil", "Greg", "Billy", "Frank", "Henry")
+
+const clients = ["google", "facebook", "twitter"]
+const friends = ["joe", "matt", "michael"]
+
+const listOfNames = [...clients, ...friends]
+
+console.log(listOfNames)
