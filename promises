@@ -1,0 +1,40 @@
+console.log('ready for esnext');
+
+// get Product
+// get Price
+// print to the screen the price
+
+var products = [
+	{
+		id: 1,
+		title: 'Sneakers',
+		price: 300
+	}
+];
+
+const getProducts = new Promise((resolve, reject) => {
+	setTimeout(() => {
+		if (products.length >= 1) {
+			resolve(products);
+		} else {
+			reject(`Error: it returned back that there is no products available`);
+		}
+	}, 2000);
+});
+
+getProducts
+	.then(products => {
+		console.log(products);
+		return products[0];
+	})
+	.then(product => {
+		console.log(product);
+		return product.price;
+	})
+	.then(price => {
+		console.log(price);
+		return price;
+	})
+	.catch(error => {
+		console.log(error);
+	});
