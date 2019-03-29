@@ -1,0 +1,42 @@
+// var cars = ['honda', 'bmw', 'benz']
+
+// var [johnyCar, joeCar, jamesCar] = cars
+
+// console.log(joeCar)
+
+// var users = ["joe", "matt", "billy"]
+
+// // for (var i = 0; i < users.length; i++) {
+// //  console.log(users[i]) 
+// // }
+
+// users.forEach((u) => {
+//   console.log(u)
+// })
+
+var users = [
+  {name:"Burns", age:32},
+  {name:"Phil", age:18},
+  {name:"Frank", age:45},
+  {name:"Burns", age:42},
+  ]
+
+var newData = users.some((user) => {
+  // var name = user.name.toLowerCase()
+  // name = name.startsWith('b')
+  // return name
+  return user.age >= 21 
+})
+
+if(newData) {
+  console.log("Everyone is over 21 and can drink all night")
+} else {
+  console.log ("Sorry only a few are over 21 and can drink the night away")
+}
+
+
+// var userNames = users.map((user) => {
+//     return user.name
+//   })
+
+// console.log(userNames)
