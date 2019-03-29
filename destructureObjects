@@ -1,0 +1,18 @@
+var cars = ['honda', 'bmw']
+var userInfo = {
+  name: "burns",
+  lastName: "vaughan",
+  age:32,
+  cars  
+}
+
+var {name, lastName, age} = userInfo
+
+console.log(userInfo.cars)
+
+var userData = function({name, lastName, age}) {
+  
+  console.log(`User: ${name} ${lastName} is ${age} years old`)
+}
+
+userData(userInfo)
