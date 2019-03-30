@@ -1,0 +1,17 @@
+var product = {
+	title: 'nike',
+	price: '360',
+	set discount(x) {
+		this.d = x;
+	},
+	get discount() {
+		return this.d;
+	}
+};
+
+var product2 = Object.defineProperties(
+	{},
+	Object.getOwnPropertyDescriptors(product)
+);
+
+console.log(product2);
