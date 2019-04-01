@@ -1,0 +1,4 @@
+const names = ['Burns is programming', 'Sally is at the store'];
+
+let newArray = names.flatMap(value => value.split(' '));
+console.log(newArray);
