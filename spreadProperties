@@ -1,0 +1,18 @@
+let user = {
+	fname: 'Burns',
+	lname: 'Vaughan',
+	age: 32,
+	phone: '02041590962'
+};
+let car = {
+	title: 'dodge viper',
+	price: 70000,
+	country: 'USA'
+};
+
+const newObject = {
+	...user,
+	...car
+};
+
+console.log(newObject);
