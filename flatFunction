@@ -1,0 +1,2 @@
+const names = [['Joe', 'John'], ['Phil', 'Harry']];
+console.log(names.flat());
