@@ -1,0 +1,2 @@
+const user = '		Burns';
+console.log(user.trimStart());
