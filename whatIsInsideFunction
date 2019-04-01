@@ -1,0 +1,5 @@
+const printName = () => {
+	console.log('Burns')
+}
+
+console.log(printName.toString());
