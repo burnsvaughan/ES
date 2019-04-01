@@ -1,0 +1,10 @@
+let user = {
+	fname: 'Burns',
+	lname: 'Vaughan',
+	age: 32,
+	phone: '02041590962'
+};
+
+let { fname, lname, ...others } = user;
+console.log(`${fname} ${lname}`);
+console.log(others);
